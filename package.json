@@ -1,0 +1,19 @@
+{
+    "name": "root",
+    "private": true,
+    "workspaces": {
+        "packages": [
+            "reactproject1",
+            "troisjs-ts"
+        ]
+    },
+    "scripts": {
+        "start": "lerna run --parallel dev",
+        "bootstrap": "npx lerna bootstrap --hoist --no-ci",
+        "clean": "npx lerna clean",
+        "build": "lerna run build"
+    },
+    "devDependencies": {
+        "lerna": "^4.0.0"
+    }
+}
